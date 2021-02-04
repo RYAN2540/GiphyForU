@@ -1,0 +1,52 @@
+<div class="container-fluid">    
+    <div class="row mb-1">
+        <div class="col-12">
+            <div class="header text-center">
+                <p>
+                    <span><img src="https://media.giphy.com/media/uoNTwShdgvkBi/giphy.gif" alt="emoji" height="120px"></span>
+                    <span class="head-title">Giphy For U</span>                    
+                </p>
+            </div>
+        </div>        
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-0"></div>
+        <div class="col-12 col-md-6 padding">
+            <div class="trending-section">
+                <div class="row">                
+                    <div class="col-12 text-center padding">
+                        <h2>TRENDING</h2>
+                        <hr>
+                    </div>                          
+                </div>
+                <div class="scrollable">
+                    <div class="row">
+                        <div *ngFor='let url of trending.gifURL' class="col-12 col-md-6 col-xl-4 mb-4">
+                            <div class="text-center">
+                                <img src="{{url}}" alt="giphyImage">
+                            </div>
+                        </div>                                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-0"></div>        
+        <div class="col-12 col-md-6 search-section">
+            <div class="row padding search-header">                    
+                <div class="col-6">
+                    <h2><strong>SEARCH</strong></h2>
+                </div>
+                <div class="col-6 text-right">
+                    <h5><a routerLink="/gifs" routerLinkActive='activeRoute'>GIF</a> | <a routerLink="/stickers" routerLinkActive='activeRoute'>STICKER</a></h5>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <router-outlet></router-outlet>
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>

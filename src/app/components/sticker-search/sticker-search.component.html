@@ -1,0 +1,23 @@
+<div>
+    <form (ngSubmit)='submitSticker()' #stickerForm='ngForm'>
+        <div class="row">
+            <div class="col-10">
+                <div class="form-group">                
+                    <input type="text" required class="form-control" id="sticker" placeholder="Search Sticker" [(ngModel)]="searchSticker.stickerInput" name="sticker" #sticker='ngModel'>                
+                </div>
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-outline-warning">Search</button>
+            </div>
+        </div>
+        <div class="scrollable">
+            <div class="row">
+                <div *ngFor='let url of thisSearchSticker.searchStickerURL' class="col-12 col-md-6 col-xl-4 mb-2 mt-2">
+                    <div class="text-center">
+                        <img src="{{url}}" alt="giphyImage">
+                    </div>
+                </div>                                        
+            </div>
+        </div>        
+    </form>
+</div>

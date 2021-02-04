@@ -1,0 +1,23 @@
+<div>
+    <form (ngSubmit)='submitGif()' #gifForm='ngForm'>
+        <div class="row">
+            <div class="col-10">
+                <div class="form-group">                
+                    <input type="text" required class="form-control" id="gif" placeholder="Search GIF" [(ngModel)]="searchGif.gifInput" name="gif" #gif='ngModel'>                
+                </div>
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-outline-warning">Search</button>
+            </div>
+        </div>
+        <div class="scrollable">
+            <div class="row">
+                <div *ngFor='let url of thisSearchGif.searchGifURL' class="col-12 col-md-6 col-xl-4 mb-2 mt-2">
+                    <div class="text-center">
+                        <img src="{{url}}" alt="giphyImage">
+                    </div>
+                </div>                                        
+            </div>
+        </div>        
+    </form>
+</div>

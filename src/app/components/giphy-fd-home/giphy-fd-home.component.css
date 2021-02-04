@@ -1,0 +1,85 @@
+.padding{
+    margin-bottom: 2em;
+}
+
+@font-face{
+    font-family: 'beatrice';
+    src: url(./../../../assets/fonts/beatrice-bw7r5.ttf)
+  }
+
+  .head-title{
+      font-family: beatrice;
+  }
+
+  .header{
+    color: #433E49;
+    font-size: 5em;
+    padding: 1%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #DBC1AD;    
+  }
+      
+  .scrollable{
+      max-height: 33em;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar{
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    border: 0px;    
+  }  
+  
+::-webkit-scrollbar-thumb {
+    background: #DBC1AD;
+    border-radius: 3px;
+  }
+
+  .trending-section{
+    padding-top: 1em;    
+    background-color: #433E49;
+  }
+
+  .trending-section h2{
+    color:  #DBC1AD;    
+    font-size: 2em;
+    font-weight: 600;
+  }
+    
+  .search-section{
+    background-color: transparent;
+    min-height: 30em;
+    margin-bottom: 2em;     
+  }
+
+  .search-header{
+    background-color: transparent;
+    color: #DBC1AD;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .activeRoute{    
+    color: orangered!important;    
+  }
+
+  .search-header a{
+    color: #DBC1AD;
+    text-decoration: none;
+  }
+
+  .search-header h2{
+    color: #DBC1AD;    
+  }
+
+  .trending h2{
+    color: #DBC1AD;
+  }
+
+  
